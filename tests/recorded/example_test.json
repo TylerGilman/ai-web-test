@@ -1,0 +1,20 @@
+{
+  "name": "Example Test",
+  "url": "https://www.example.com",
+  "actions": [
+    {
+      "action_type": "wait",
+      "selector": "//h1",
+      "selector_type": "xpath",
+      "value": null,
+      "timestamp": 1731536184.314224
+    },
+    {
+      "action_type": "assert",
+      "selector": "//h1",
+      "selector_type": "xpath",
+      "value": "Example Domain",
+      "timestamp": 1731536184.314229
+    }
+  ]
+}

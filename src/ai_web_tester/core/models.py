@@ -1,32 +1,49 @@
-from dataclasses import dataclass, asdict
-from typing import List, Dict, Optional, Union
-import uuid
-import datetime
+from dataclasses import dataclass
+from typing import List, Optional, Dict
+import json
+
+@dataclass
+class TestAction:
+    """Represents a single test action"""
+    element_type: str
+    selector: str
+    action: str
+    value: Optional[str] = None
+    timestamp: float = None
+    
+    def to_dict(self):
+        return {
+            'element_type': self.element_type,
+            'selector': self.selector,
+            'action': self.action,
+            'value': self.value,
+            'timestamp': self.timestamp
+        }
 
 @dataclass
 class TestStep:
-    action_type: str
-    selector: str
-    selector_type: str = "xpath"
-    input_value: Optional[str] = None
-    expected_result: Optional[str] = None
-    timeout: int = 10
+    """A step in a test case"""
+    action: TestAction
+    expected_state: dict
     
     def to_dict(self):
-        return asdict(self)
+        return {
+            'action': self.action.to_dict(),
+            'expected_state': self.expected_state
+        }
 
 @dataclass
 class TestCase:
+    """A complete test case"""
     name: str
-    description: str
-    preconditions: List[str]
+    url: str
     steps: List[TestStep]
-    expected_outcome: str
-    id: str = None
-    
-    def __post_init__(self):
-        if not self.id:
-            self.id = str(uuid.uuid4())
+    expected_outcomes: List[dict]
     
     def to_dict(self):
-        return asdict(self)
+        return {
+            'name': self.name,
+            'url': self.url,
+            'steps': [step.to_dict() for step in self.steps],
+            'expected_outcomes': self.expected_outcomes
+        }

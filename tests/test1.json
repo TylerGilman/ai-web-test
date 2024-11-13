@@ -1,0 +1,184 @@
+{
+  "name": "test1",
+  "url": "https://nereustechnology.net/home",
+  "steps": [
+    {
+      "action": {
+        "element_type": "span",
+        "selector": "/html[1]/body[1]/nav[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[2]/div[1]/span[1]",
+        "action": "click",
+        "value": "Projects",
+        "timestamp": 1731538314876
+      },
+      "expected_state": {}
+    },
+    {
+      "action": {
+        "element_type": "span",
+        "selector": "/html[1]/body[1]/nav[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[3]/div[1]/span[1]",
+        "action": "click",
+        "value": "Blog",
+        "timestamp": 1731538316987
+      },
+      "expected_state": {}
+    },
+    {
+      "action": {
+        "element_type": "input",
+        "selector": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]",
+        "action": "click",
+        "value": "",
+        "timestamp": 1731538318276
+      },
+      "expected_state": {}
+    },
+    {
+      "action": {
+        "element_type": "input",
+        "selector": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]",
+        "action": "input",
+        "value": "h",
+        "timestamp": 1731538319122
+      },
+      "expected_state": {}
+    },
+    {
+      "action": {
+        "element_type": "input",
+        "selector": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]",
+        "action": "input",
+        "value": "he",
+        "timestamp": 1731538319246
+      },
+      "expected_state": {}
+    },
+    {
+      "action": {
+        "element_type": "input",
+        "selector": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]",
+        "action": "input",
+        "value": "hel",
+        "timestamp": 1731538319623
+      },
+      "expected_state": {}
+    },
+    {
+      "action": {
+        "element_type": "input",
+        "selector": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]",
+        "action": "input",
+        "value": "hell",
+        "timestamp": 1731538319863
+      },
+      "expected_state": {}
+    },
+    {
+      "action": {
+        "element_type": "input",
+        "selector": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]",
+        "action": "input",
+        "value": "hello",
+        "timestamp": 1731538320125
+      },
+      "expected_state": {}
+    },
+    {
+      "action": {
+        "element_type": "input",
+        "selector": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]",
+        "action": "change",
+        "value": "hello",
+        "timestamp": 1731538322410
+      },
+      "expected_state": {}
+    },
+    {
+      "action": {
+        "element_type": "a",
+        "selector": "/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/article[1]/div[1]/a[1]",
+        "action": "click",
+        "value": "Read More",
+        "timestamp": 1731538322516
+      },
+      "expected_state": {}
+    }
+  ],
+  "successful_paths": [
+    {
+      "url": "https://nereustechnology.net/home",
+      "actions": [
+        {
+          "element_type": "span",
+          "selector": "/html[1]/body[1]/nav[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[2]/div[1]/span[1]",
+          "action": "click",
+          "value": "Projects",
+          "timestamp": 1731538314876
+        },
+        {
+          "element_type": "span",
+          "selector": "/html[1]/body[1]/nav[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[3]/div[1]/span[1]",
+          "action": "click",
+          "value": "Blog",
+          "timestamp": 1731538316987
+        },
+        {
+          "element_type": "input",
+          "selector": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]",
+          "action": "click",
+          "value": "",
+          "timestamp": 1731538318276
+        },
+        {
+          "element_type": "input",
+          "selector": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]",
+          "action": "input",
+          "value": "h",
+          "timestamp": 1731538319122
+        },
+        {
+          "element_type": "input",
+          "selector": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]",
+          "action": "input",
+          "value": "he",
+          "timestamp": 1731538319246
+        },
+        {
+          "element_type": "input",
+          "selector": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]",
+          "action": "input",
+          "value": "hel",
+          "timestamp": 1731538319623
+        },
+        {
+          "element_type": "input",
+          "selector": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]",
+          "action": "input",
+          "value": "hell",
+          "timestamp": 1731538319863
+        },
+        {
+          "element_type": "input",
+          "selector": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]",
+          "action": "input",
+          "value": "hello",
+          "timestamp": 1731538320125
+        },
+        {
+          "element_type": "input",
+          "selector": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]",
+          "action": "change",
+          "value": "hello",
+          "timestamp": 1731538322410
+        },
+        {
+          "element_type": "a",
+          "selector": "/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/article[1]/div[1]/a[1]",
+          "action": "click",
+          "value": "Read More",
+          "timestamp": 1731538322516
+        }
+      ]
+    }
+  ],
+  "failure_paths": []
+}
